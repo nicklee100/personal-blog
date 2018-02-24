@@ -1,0 +1,326 @@
+body { margin: 0px;}
+
+header {
+	background-image:  url("../img/macreflection.jpg");
+	background-size: cover;
+	border-bottom: solid 5px -webkit-linear-gradient(top, rgb(246,177,80) 1%,rgb(233,106,115) 100%); /* Chrome10-25,Safari5.1-6 */}
+.layer{
+	background-color: rgba(70, 68, 69, 0.7);
+	top: 0;
+	left: 0;
+}
+
+.border {
+	padding: 10px;
+	background: linear-gradient(90deg, #f7b245, #eb6971);
+}
+
+.navigation {
+	color: hsl(33, 23%, 91%);
+  	background-color: #333;
+  	padding: 15px;
+  	border-bottom: solid 1px #7bc7c7;
+
+}
+
+.navigation ul {
+	margin:0;
+	padding-left:0px;
+}
+
+.navigation ul li {
+	display: inline;
+	margin: none;
+}
+
+.navigation ul li a {
+	color: hsl(33, 23%, 91%);
+	text-decoration:none;
+}
+
+.navigation ul li a:hover {
+	padding-bottom:10px;
+	border-bottom: solid 4px #7bc7c7;
+}
+
+
+#hamburger-menu{
+	display:none;
+	line-height:18px;
+}
+
+@media (max-width: 700px) {
+
+	.navigation ul li:not(:first-child) {
+		display:none;
+	}
+
+	.navigation.toggle ul li {
+		display:block;
+		float:none;
+		padding-bottom: 10px;
+	}
+
+	.navigation ul li a:hover {
+		border-bottom: none;
+	}
+
+	#hamburger-menu {
+		display: inline;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: inherit;
+	}
+
+}
+
+.branding {
+	padding: 25px;
+	text-align: center;
+	font-family:  Georgia, Serif;
+}
+
+.branding h1 {
+	/* color: rgb(198,85,64); */
+	color:rgb(64,64,64);
+	color:rgb(106,166,210);
+	color:white;
+	color: hsl(33, 23%, 91%);
+	font-size:48px;
+	margin-top:20px;
+	margin-bottom:20px;
+	font-family:"adelle",serif;
+	font-weight: 300;
+}
+
+.branding hr {
+	width: 8%;
+	border: 2px solid orange;
+	background-color:orange;
+	margin-top:20px;
+}
+
+.branding h2 {
+	color:rgb(64,64,64);
+	color:rgb(106,166,210);
+	color:white;
+	color:#e3ddd5
+
+	}
+
+main {
+	/* background-color: rgb(236,239,241); */
+	background-color:rgb(232, 241, 245);
+	padding: 40px;
+	min-height: 100%;
+}
+
+.post{
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	height: auto;
+	box-shadow: .3px .3px .3px .3px #888888;
+}
+
+.widget {
+	background-color: rgb(255, 255, 255);
+	padding: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.widget ul {
+	list-style: none;
+	font-size: 14px;
+	padding: 0;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.widget ul li {
+	border-bottom: solid 1px #ddd;
+	padding: 10px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.widget h4, h3 {
+	text-align: center;
+}
+
+.widget h2, h4 {
+	color: rgb(64,64,64);
+	font-size: 18px;
+	padding: 10px;
+	margin: 0;
+	border-left: solid 2px rgb(247,165,50);
+	border-bottom: solid 1px rgb(216,216,216);
+	text-align: center;
+}
+
+.widget a:link {
+	color: rgb(76,76,76);
+	text-decoration: none;
+}
+
+.author-widget {
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+}
+
+.widget {
+	text-align: center;
+}
+
+.widget label {
+	color: rgb(64,64,64);
+	font-size: 22px;
+	font-weight:bold;
+	border: 2px black;
+}
+
+
+.searchform {
+	margin: 20 20 0 20;
+	font-size: 24px;
+}
+
+#searchsubmit {
+	background-color:rgb(247,165,50);
+	background-color: rgb(76, 76, 76);
+	color:rgb(64,64,64);
+	color:white;
+	font-size: 16px;
+	border:none;
+	margin: 5px 0px
+	/* border-radius: 34px; */
+}
+
+/****
+
+Footer
+
+****/
+
+
+	footer {
+		background-color: rgb(76, 76, 76);
+		padding: 10px 50px;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.stay-connected {
+		text-align: left;
+		color:white;
+	}
+
+	.stay-connected form label  {
+		display: block;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	.stay-connected button {
+		display: block;
+		margin-top: 10px;
+		padding: 10px;
+	}
+
+	.footer-widget {
+		background-color: rgb(76, 76, 76);
+		text-align: left;
+		color: white;
+		padding: 0px;
+		line-height: 22px;
+		display:inline;
+	}
+
+	.footer-widget p {
+		display:inline;
+	}
+
+	.footer-widget img {
+		display:inline;
+		float:left;
+		margin-right:10px;
+	}
+
+	#copyright {
+		background-color: rgb(76, 76, 76);
+		color:white;
+		margin: 0 auto;
+		text-align:center;
+	}
+
+
+/****
+
+	BLOG ARTICLES HOME.PHP
+
+****/
+
+	.no-bullet {
+		list-style:none;
+	}
+
+	.post-meta li {
+		display: inline;
+	  	color: rgb(152, 152, 152);
+	}
+
+
+	.post {
+		margin-bottom: 20px;
+		color:rgb(76, 76, 76);
+		border-left: solid 2px  rgb(198,85,64);
+		border-left: solid 2px rgb(247,165,50);
+	}
+
+	.post a {
+		color:rgb(76, 76, 76);
+	}
+
+	.post a:link {
+		text-decoration: none;
+		color:rgb(76, 76, 76);
+	}
+
+	.post a:hover {
+		color:rgb(121, 118, 118);
+	}
+
+	.post a:visited {
+		color:rgb(76, 76, 76);
+	}
+
+	.post button {
+
+		background-color: rgb(76, 76, 76);
+		color:white;
+		font-size: 16px;
+		width: 160px;  /* why do this over padding*/
+		height: 38px;
+		border: none;
+		display: block;
+		margin:  0 auto;
+	}
+
+	.post img {
+			max-width: 100%;
+    	height: auto;
+    	display: inline-block;
+	}
+
+	.post-listing p{
+		display:inline-block;
+		margin-right: 15px;
+	}
+
+	.side img {
+		height: 120px;
+		border-radius: 100%;
+	}
+
+
