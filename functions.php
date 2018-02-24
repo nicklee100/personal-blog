@@ -43,4 +43,5 @@ function wpt_theme_js(){
 
 add_action( 'wp_enqueue_scripts', 'wpt_theme_js');
 
+add_theme_support( 'post-thumbnails' );
 ?>
